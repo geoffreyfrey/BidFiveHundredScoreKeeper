@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hand_table"
+    android:gravity="center_horizontal"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        >
+
+        <TextView
+            android:id="@+id/team_player_one_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/NamesInTableTextStyle"
+            android:textSize="14dp"
+            android:text="Player One &amp; Player Two"
+            android:layout_margin="0dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            />
+
+        </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_margin="0dp"
+        >
+
+        <ImageView
+            android:id="@+id/team_rm"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/rmcards"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/player_bids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Played"
+                android:paddingRight="4dp"
+                />
+
+            <TextView
+                android:id="@+id/team_games_played"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:layout_weight="1"
+                style="@style/TricksAndSCTextStyle"
+                android:text="10"
+                android:paddingRight="4dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/net_points_column"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Win Percentage"
+                />
+
+            <TextView
+                android:id="@+id/team_win_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="8"
+                android:textSize="10dp"
+                android:textColor="@android:color/black"
+                android:text="50%"
+                android:padding="0dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/player_games_played"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Won"
+                android:paddingLeft="4dp"
+                />
+            <TextView
+                android:id="@+id/team_games_won"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                style="@style/TricksAndSCTextStyle"
+                android:text="5"
+                android:paddingLeft="4dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/team_zg"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:src="@drawable/zgcc2"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            />
+
+    </TableRow>
+
+</TableLayout>

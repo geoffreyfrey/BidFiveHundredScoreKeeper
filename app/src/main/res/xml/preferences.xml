@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:layout="@layout/preference_title"
+        android:title="@string/rule_preferences"
+        android:summary="@string/rule_preferences">
+
+        <CheckBoxPreference
+            android:key="allow_six_trick_bids"
+            android:title="@string/allow_six_bids"
+            android:summaryOn="@string/allow_six_bids_summary_on"
+            android:summaryOff="@string/allow_six_bids_summary_off"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="nonbidding_points"
+            android:title="@string/nonbidding_points_options_title"
+            android:dialogTitle="@string/nonbidding_points_options_title"
+            android:entries="@array/nonbidding_points_options"
+            android:entryValues="@array/nonbidding_points_options"
+            android:defaultValue="@string/always"
+            />
+
+        <CheckBoxPreference
+            android:key="ten_trick_bonus"
+            android:title="@string/ten_trick_bonus_title"
+            android:summaryOn="@string/ten_trick_bonus_summary_on"
+            android:summaryOff="@string/ten_trick_bonus_summary_off"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hand_table"
+    android:gravity="center_horizontal"
+    >
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        >
+        <TextView
+            android:id="@+id/player_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/TitleTextStyle"
+            android:textStyle="italic"
+            android:text="Player Name"
+            android:textSize="14sp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:layout_margin="0dp"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/player_bids"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|right"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Bid 1000"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp"
+                android:layout_margin="0dp"
+                />
+
+            <TextView
+                android:id="@+id/player_bids_made"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|right"
+                android:layout_weight="1"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Made 999"
+                android:paddingRight="4dp"
+                android:paddingBottom="0dp"
+                android:paddingTop="0dp"
+                android:layout_margin="0dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/bidding_column"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/TricksAndSCTextStyle"
+                android:textStyle="bold"
+                android:text="Bidding"
+                android:paddingRight="4dp"
+                />
+
+            <TextView
+                android:id="@+id/player_bids_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textColor="@android:color/black"
+                android:text="100%"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:id="@+id/bid_scull_and_cross"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="4"
+            android:src="@drawable/skacr"
+            android:scaleType="fitStart"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="6"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/net_points_column"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Net Points"
+                />
+
+            <TextView
+                android:id="@+id/player_net_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="8"
+                android:textSize="10dp"
+                android:textColor="@android:color/black"
+                android:text="10000"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/game_scull_and_cross"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="4"
+            android:src="@drawable/skacr"
+            android:scaleType="fitEnd"
+            android:layout_gravity="left"
+            android:adjustViewBounds="true"
+            android:padding="4dp"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/games_column"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                style="@style/TricksAndSCTextStyle"
+                android:textStyle="bold"
+                android:paddingRight="4dp"
+                android:text="Games"
+                />
+
+            <TextView
+                android:id="@+id/player_games_percentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:textColor="@android:color/black"
+                android:text="100%"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="7"
+            android:padding="0dp"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/player_games_played"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|left"
+                style="@style/TricksAndSCTextStyle"
+                android:paddingRight="4dp"
+                android:text="Played 1000"
+                />
+            <TextView
+                android:id="@+id/player_games_won"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|left"
+                style="@style/TricksAndSCTextStyle"
+                android:paddingRight="4dp"
+                android:text="Won 500"/>
+        </LinearLayout>
+
+
+    </TableRow>
+
+</TableLayout>

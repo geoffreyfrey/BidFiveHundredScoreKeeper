@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/hand_table"
+    android:gravity="center_horizontal">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:paddingTop="2dp"
+        >
+        <TextView
+            android:id="@+id/team_one_bidder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            style="@style/NamesInTableTextStyle"
+            android:text="Bidder Name bid:"
+            android:layout_margin="0dp"
+            android:paddingLeft="4dp"
+            />
+
+        <TextView
+            android:id="@+id/dealer_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/NamesInTableTextStyle"
+            android:text="Dealer: Dealer Name"
+            android:layout_margin="0dp"
+            android:paddingRight="4dp"
+            android:paddingLeft="4dp"
+            />
+
+        <TextView
+            android:id="@+id/team_two_bidder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_weight="1"
+            style="@style/NamesInTableTextStyle"
+            android:text="Bidder Name bid:"
+            android:layout_margin="0dp"
+            android:paddingRight="4dp"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/team_one_bid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/BidTextStyle"
+            android:layout_weight="3"
+            android:text="10 &#x2660;"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/team_one_tricks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Won 10"
+                />
+            <TextView
+                android:id="@+id/team_one_score_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center_horizontal"
+                android:layout_weight="1"
+                style="@style/TricksAndSCTextStyle"
+                android:text="+250"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_one_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="0"
+            />
+
+        <TextView
+            android:id="@+id/center_spacer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text=":"
+            />
+
+        <TextView
+            android:id="@+id/team_two_score"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:text="-5000"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="0dp"
+            >
+
+            <TextView
+                android:id="@+id/team_two_tricks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"
+                style="@style/TricksAndSCTextStyle"
+                android:text="Won 10"
+                />
+            <TextView
+                android:id="@+id/team_two_score_change"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top|center_horizontal"
+                style="@style/TricksAndSCTextStyle"
+                android:text="+250"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/team_two_bid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/BidTextStyle"
+            android:layout_weight="3"
+            android:text="10"
+            android:textSize = "20sp"
+            />
+
+    </TableRow>
+
+    <!--<TableRow-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="0dp"-->
+        <!--android:paddingTop="2dp"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/team_one_victory"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--style="@style/VictoryTextStyle"-->
+            <!--android:layout_margin="0dp"-->
+            <!--android:paddingLeft="4dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/team_two_victory"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--style="@style/VictoryTextStyle"-->
+            <!--android:layout_margin="0dp"-->
+            <!--android:paddingRight="4dp"-->
+            <!--/>-->
+
+    <!--</TableRow>-->
+
+
+</TableLayout>

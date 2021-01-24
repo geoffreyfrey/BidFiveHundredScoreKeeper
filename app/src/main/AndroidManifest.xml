@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geoffreyfrey.bidfivehundredscorekeeper"
+    android:versionCode="0"
+    android:versionName="0.01"
+    >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon3"
+        android:label="500 Scorecard"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompatTheme">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MatchActivity"
+            android:parentActivityName=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.NEWMATCH" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".NewMatchFour"
+            android:parentActivityName=".MainActivity"
+        />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/PreferenceScreen">
+        </activity>
+
+        <activity android:name=".PlayerEditor" />
+
+        <activity android:name=".TeamEditor" />
+
+        <activity android:name=".SetDealerOrderActivity" />
+
+        <activity android:name="com.geoffreyfrey.SQLite.DatabaseExplorer" />
+
+        <activity
+            android:name=".GameActivity"
+            android:parentActivityName=".MatchActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HandActivity"
+            android:parentActivityName=".GameActivity"
+        />
+    </application>
+
+</manifest>

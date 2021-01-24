@@ -1,0 +1,120 @@
+<resources>
+
+    <!--Main-->
+    <string name="list_of_matches">List Of Matches</string>
+    <string name="new_match_button">New Match</string>
+    <string name="select_player_quantity">Select Player Quantity</string>
+    <string-array name="player_quantity_options">
+        <item>Four Handed</item>
+        <item>Five Handed</item>
+        <item>Six Handed</item>
+    </string-array>
+
+    <!--Action Bar Items-->
+    <string name="action_settings">Settings</string>
+    <string name="manage_players_title">Manage Players</string>
+
+    <!--Settings Page-->
+    <string name="rule_preferences">Rule Preferences</string>
+    <string-array name="nonbidding_points_options">
+        <item>Always</item>
+        <item>Only if Bidding team loses</item>
+        <item>Never</item>
+    </string-array>
+    <string name="always">Always</string>
+    <string name="nonbidding_points_options_title">Award points for non-bidding team:</string>
+    <string name="allow_six_bids">Allow Six Trick Bids?</string>
+    <string name="allow_six_bids_summary_on">Allow bids of only six tricks in a hand.</string>
+    <string name="allow_six_bids_summary_off">The minimum allowable bid is seven tricks.</string>
+    <string name="ten_trick_bonus_title">Ten Trick Point Bonus/Minimum</string>
+    <string name="ten_trick_bonus_summary_on">A minimum 250 points are awarded for getting all 10 tricks. The value of the bid is awarded if it is larger than 250.</string>
+    <string name="ten_trick_bonus_summary_off">Bidding team always gets the value of their bid. No 250 point minimum award for taking all 10 tricks.</string>
+
+    <!--The Player Editor Screen-->
+
+    <!--The Team Manager Screen-->
+
+    <!--The Database Viewer Screen-->
+    <string name="db_viewer_description">View Database Tables</string>
+    <string name="db_viewer_select_table">Select Table</string>
+
+    <!--Set Dealer Screen-->
+    <string name="change_dealer">Change Dealer</string>
+    <string name="set_dealer_header_text">Select the current dealer:</string>
+    <string name="set_second_dealer_header_text">Now, select the next dealer:</string>
+    <string name="new_dealer_order">The new dealer order is:</string>
+    <string name="change_teams_note">Note: The third and fourth dealers are determined based on when their teammate deals. If you want to change teammates, a new match must be made.</string>
+    <string name="current_dealer">Current Dealer:&#032;</string>
+    <string name="second_dealer">Next Dealer:&#032;</string>
+    <string name="third_dealer">Third Dealer:&#032;</string>
+    <string name="fourth_dealer">Final Dealer:&#032;</string>
+
+    <!--Match Page
+    -->
+    <string name="new_game_button">New Game</string>
+    <string name="no_games">No games have been created in this match yet.</string>
+    <string name="team_one_title">Team One</string>
+    <string name="team_two_title">Team Two</string>
+
+
+    <!--New Four Handed Match Setup-->
+    <string name="new_match_directions">Input player names</string>
+    <string name="new_match_directions2">The deal order and teams are determined by the player positions around the table below.</string>
+    <string name="player_one_hint">First Dealer</string>
+    <string name="player_two_hint">Player 2</string>
+    <string name="player_three_hint">Player 3</string>
+    <string name="player_four_hint">Player 4</string>
+    <string name="start_match">Start Match</string>
+    <string name="missing_player_name">All players must have names input before proceeding.</string>
+    <string name="duplicate_name">Names cannot repeat. Enter all unique names.</string>
+
+    <!--Game Page
+-->
+    <string name="new_hand">New Hand</string>
+    <string name="no_hands">No hands have been created in this game yet.</string>
+    <string name="incomplete_hand_text">Click here to input hand information for this hand.</string>
+    <string name="complete_initialized_hand_warning">Click the hand above to complete the previous hand before starting a new hand!</string>
+
+    <!--Hand Page-->
+    <string name="bidder_title">Bidding Player</string>
+    <string name="bid">Bid</string>
+
+    <string name="six_spades">6 &#x2660;</string>
+    <string name="seven_spades">7 &#x2660;</string>
+    <string name="eight_spades">8 &#x2660;</string>
+    <string name="nine_spades">9 &#x2660;</string>
+    <string name="ten_spades">10 &#x2660;</string>
+
+    <string name="six_clubs">6 &#x2663;</string>
+    <string name="seven_clubs">7 &#x2663;</string>
+    <string name="eight_clubs">8 &#x2663;</string>
+    <string name="nine_clubs">9 &#x2663;</string>
+    <string name="ten_clubs">10 &#x2663;</string>
+
+    <string name="six_diamonds">6 &#x2666;</string>
+    <string name="seven_diamonds">7 &#x2666;</string>
+    <string name="eight_diamonds">8 &#x2666;</string>
+    <string name="nine_diamonds">9 &#x2666;</string>
+    <string name="ten_diamonds">10 &#x2666;</string>
+
+    <string name="six_hearts">6 &#x2665;</string>
+    <string name="seven_hearts">7 &#x2665;</string>
+    <string name="eight_hearts">8 &#x2665;</string>
+    <string name="nine_hearts">9 &#x2665;</string>
+    <string name="ten_hearts">10 &#x2665;</string>
+
+    <string name="six_notrump">6 NT</string>
+    <string name="seven_notrump">7 NT</string>
+    <string name="eight_notrump">8 NT</string>
+    <string name="nine_notrump">9 NT</string>
+    <string name="ten_notrump">10 NT</string>
+
+    <string name="nullo">Nullo</string>
+    <string name="open_nullo">Open Nullo</string>
+    <string name="double_nullo">Double Nullo</string>
+
+    <string name="trick_for_each_team">Tricks won by each team:</string>
+
+    <string name="points_awarded">Points Awarded</string>
+
+</resources>
